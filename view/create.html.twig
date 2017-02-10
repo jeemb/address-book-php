@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Created Contact!{% endblock %}
+
+{% block content %}
+<h2>You created a new contact!</h2>
+<form action="/back_home" method="get">
+    <button type="submit">Add Contact</button>
+</form>
+
+{% endblock %}

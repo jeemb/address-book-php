@@ -24,7 +24,7 @@
         $name_input = $_POST['name'];
         $phone_input = $_POST['phone'];
         $address_input = $_POST['amount'];
-        
+        return $app['twig']->render('create.html.twig');
     });
 
 
