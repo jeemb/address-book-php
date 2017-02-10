@@ -27,6 +27,36 @@
             return $this->Address;
         }
 
+        function setName()
+        {
+            return $this->name;
+        }
+
+        function setPhone()
+        {
+            return $this->phone;
+        }
+
+        function setAddress()
+        {
+            return $this->Address;
+        }
+
+        function save()
+        {
+            array_push($_SESSION['address_list'], $this);
+        }
+
+        static function getAll()
+        {
+            return $_SESSION['address_list'];
+        }
+
+        static function deleteAll()
+        {
+            $_SESSION['address_list']=[];
+        }
+
 
     }
 
