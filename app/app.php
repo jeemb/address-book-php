@@ -26,11 +26,6 @@
         return $app['twig']->render('create_contact.html.twig', array('new_contact' => $contact));
     });
 
-    // $app->get("/back_home", function() use ($app) {
-    //     return $app['twig']->render('root.html.twig');
-    // });
-
-
 
 
     return $app;
