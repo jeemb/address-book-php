@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Input Contact{% endblock %}
+
+{% block content %}
+<h2>Enter a New Contact</h2>
+<form action="/add" method="post">
+    <label for="name">Enter contact name: </label>
+    <input type="text" id="name" name="name">
+
+    <label for="phone">Enter contact phone number: </label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="address">Enter contact address: </label>
+    <input type="text" id="address" name="address">
+
+    <button type="submit">Add Contact</button>
+</form>
+
+{% endblock %}
