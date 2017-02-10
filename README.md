@@ -1,6 +1,6 @@
 # _Address Book_
 
-#### Add contact information to a address book!
+#### Add contact information to an address book
 
 #### By Jennifer Beem
 
