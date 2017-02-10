@@ -3,35 +3,43 @@
 {% block title %}Input Contact{% endblock %}
 
 {% block content %}
-<h2>Enter a New Contact</h2>
-<form action="/add" method="post">
-    <label for="name">Enter contact name: </label>
-    <input type="text" id="name" name="name">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="input">
+                <h2>Enter a New Contact</h2>
+                <form action="/add" method="post">
+                    <label for="name">Contact name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter name">
+                    <br>
+                    <label for="phone">Contact phone number: </label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+                    <br>
+                    <label for="address">Contact address: </label>
+                    <input type="text" id="address" name="address" placeholder="Enter address">
+                    <br>
+                    <button type="submit">Add Contact</button>
+                </form>
+            </div>
 
-    <label for="phone">Enter contact phone number: </label>
-    <input type="text" id="phone" name="phone">
-
-    <label for="address">Enter contact address: </label>
-    <input type="text" id="address" name="address">
-
-    <button type="submit">Add Contact</button>
-</form>
-
-{% if contacts is not empty %}
-<h2>Your Address Book:</h2>
-<ul>
-    {% for contact in contacts %}
-    <li>Name: {{ contact.getName }}</li>
-    <ul>
-        <li>Phone: {{ contact.getPhone }}</li>
-        <li>Address: {{ contact.getAddress }}</li>
-    </ul>
-    {% endfor %}
-</ul>
-{% endif %}
-
-<form action="/delete_contacts" method="post">
-    <button type="submit" name="delete">Clear your Address Book</button>
-</form>
-
+            <div class="col-md-6" id="update">
+                {% if contacts is not empty %}
+                <h2>Your Address Book:</h2>
+                <ul>
+                    {% for contact in contacts %}
+                    <li>Name: {{ contact.getName }}</li>
+                    <ul>
+                        <li>Phone: {{ contact.getPhone }}</li>
+                        <li>Address: {{ contact.getAddress }}</li>
+                    </ul>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="delete-button"
+                <form action="/delete_contacts" method="post">
+                    <button type="submit" name="delete">Clear your Address Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
