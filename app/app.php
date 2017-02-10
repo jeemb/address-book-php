@@ -1,11 +1,21 @@
 <?php
-date_default_timezone_set("America/Los_Angeles");
+    date_default_timezone_set("America/Los_Angeles");
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/address.php";
 
-$app = new Silex\Application();
+    session_start();
+    if (empty($_SESSION['address_list'])) {
+        $_SESSION['address_list'] = array();
+    }
 
-$app["debug"] = true;
+    $app = new Silex\Application();
 
-return $app;
+    $app["debug"] = true;
+
+
+
+
+
+
+    return $app;
 ?>
