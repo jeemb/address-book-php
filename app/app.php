@@ -5,8 +5,8 @@
 
     session_start();
 
-    if (empty($_SESSION['address_list'])) {
-        $_SESSION['address_list'] = array();
+    if (empty($_SESSION['list_of_contacts'])) {
+        $_SESSION['list_of_contacts'] = array();
     }
 
     $app = new Silex\Application();

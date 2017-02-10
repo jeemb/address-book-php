@@ -44,17 +44,17 @@
 
         function save()
         {
-            array_push($_SESSION['address_list'], $this);
+            array_push($_SESSION['list_of_contacts'], $this);
         }
 
         static function getAll()
         {
-            return $_SESSION['address_list'];
+            return $_SESSION['list_of_contacts'];
         }
 
         static function deleteAll()
         {
-            $_SESSION['address_list']=[];
+            $_SESSION['list_of_contacts']=[];
         }
 
 
