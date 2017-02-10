@@ -4,6 +4,12 @@
 
 {% block content %}
 <h2>You created a new contact!</h2>
+    <ul>
+        <li>Name: {{ new_contact.getName }}</li>
+        <li>Phone #: {{ new_contact.getPhone }}</li>
+        <li>Address: {{ new_contact.getAddress }}</li>
+    </ul>
+
 <form action="/back_home" method="get">
     <button type="submit">Return to Homepage</button>
 </form>

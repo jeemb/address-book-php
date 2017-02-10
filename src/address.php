@@ -24,7 +24,7 @@
 
         function getAddress()
         {
-            return $this->Address;
+            return $this->address;
         }
 
         function setName($new_name)
