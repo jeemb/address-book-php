@@ -31,6 +31,5 @@
         return $app['twig']->render('delete.html.twig');
     });
 
-
     return $app;
 ?>
