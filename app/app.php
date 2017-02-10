@@ -17,7 +17,7 @@
     $app["debug"] = true;
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('root.html.twig');
+        return $app['twig']->render('root.html.twig', array('addresses' => Contact::getAll()));
     });
 
     $app->post("/add", function() use ($app) {
@@ -25,6 +25,10 @@
         $phone_input = $_POST['phone'];
         $address_input = $_POST['amount'];
         return $app['twig']->render('create.html.twig');
+    });
+
+    $app->get("/back_home", function() use ($app) {
+        return $app['twig']->render('root.html.twig');
     });
 
 

@@ -27,19 +27,19 @@
             return $this->Address;
         }
 
-        function setName()
+        function setName($new_name)
         {
-            return $this->name;
+            $this->name = (string) $new_name;
         }
 
-        function setPhone()
+        function setPhone($new_phone)
         {
-            return $this->phone;
+            $this->phone = (string) $new_phone;
         }
 
-        function setAddress()
+        function setAddress($new_address)
         {
-            return $this->Address;
+            $this->Address = (string) $new_address;
         }
 
         function save()
