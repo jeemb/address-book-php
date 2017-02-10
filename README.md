@@ -1,20 +1,20 @@
 # _Application Specifications_*
 
 * User can add a new contact and will be routed to a confirmation page.
-    * **Input: Jacob, 999-999-9999 100 SW 4th Ave.** *
-    * **Output: "You added a new contact!"** *
+    * **Input: "Jacob", 999-999-9999, "100 SW 4th Ave.""**
+    * **Output: "You added a new contact!" Name: Jacob, Phone: 999-999-99999, Address: "100 SW 4th Ave."** 
 * User can push button on confirmation page to be routed back to the homepage.
-    * **Input: User pushes homepage button** *
-    * **Output: User is routed back to homepage** *
+    * **Input: User pushes homepage button**
+    * **Output: User is routed back to homepage**
 * The homepage displays all contacts added in the session.
-    * **Input:User pushes homepage button** *
-    * **Output:All Contacts listed on homepage** *
+    * **Input:User pushes homepage button**
+    * **Output:All Contacts listed on homepage**
 * User can push button on homepage to delete all contacts from session and will be routed to delete page.
-    * **Input:User pushes "delete all" button** *
-    * **Output:Routed to "delete" page** *
+    * **Input:User pushes "delete all" button**
+    * **Output:Routed to "delete" page**
 * Delete page confirms deletion of all contacts
-    * **Input:User pushes delete all button** *
-    * **Output:"Address book cleared!"** *
+    * **Input:User pushes delete all button**
+    * **Output:"Address book cleared!"**
 * User can push button on delete page to be routed back to the homepage.
-    * **Input:User pushes "homepage" button** *
-    * **Output:Routed to homepage** *
+    * **Input:User pushes "homepage" button**
+    * **Output:Routed to homepage**
