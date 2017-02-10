@@ -17,4 +17,17 @@
     <button type="submit">Add Contact</button>
 </form>
 
+{% if contacts is not empty %}
+<h2>Your Address Book:</h2>
+<ul>
+    {% for contact in contacts %}
+    <li>Name: {{ contact.getName }}</li>
+    <ul>
+        <li>Phone: {{ contact.getPhone }}</li>
+        <li>Address: {{ contact.getAddress }}</li>
+    </ul>
+    {% endfor %}
+</ul>
+{% endif %}
+
 {% endblock %}

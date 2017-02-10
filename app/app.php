@@ -17,7 +17,7 @@
     $app["debug"] = true;
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('root.html.twig', array('addresses' => Contact::getAll()));
+        return $app['twig']->render('root.html.twig', array('contacts' => Contact::getAll()));
     });
 
     $app->post("/add", function() use ($app) {

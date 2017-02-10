@@ -3,12 +3,11 @@
 {% block title %}Created Contact!{% endblock %}
 
 {% block content %}
-<h2>You created a new contact!</h2>
+    <h2>You created a new contact!</h2>
     <ul>
         <li>Name: {{ new_contact.getName }}</li>
         <li>Phone #: {{ new_contact.getPhone }}</li>
         <li>Address: {{ new_contact.getAddress }}</li>
     </ul>
     <p><a href='/'>View your list of things to do.</a></p>
-
 {% endblock %}
