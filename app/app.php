@@ -23,12 +23,12 @@
     $app->post("/add", function() use ($app) {
         $contact = new Contact($_POST['name'], $_POST['phone'], $_POST['address']);
         $contact->save();
-        return $app['twig']->render('create.html.twig', array('new_contact' => $contact));
+        return $app['twig']->render('create_contact.html.twig', array('new_contact' => $contact));
     });
 
-    $app->get("/back_home", function() use ($app) {
-        return $app['twig']->render('root.html.twig');
-    });
+    // $app->get("/back_home", function() use ($app) {
+    //     return $app['twig']->render('root.html.twig');
+    // });
 
 
 
