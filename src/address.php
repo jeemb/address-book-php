@@ -34,7 +34,7 @@
 
         function setPhone($new_phone)
         {
-            $this->phone = (float) $new_phone;
+            $this->phone = (string) $new_phone;
         }
 
         function setAddress($new_address)
